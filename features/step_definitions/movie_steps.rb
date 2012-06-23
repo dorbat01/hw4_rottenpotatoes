@@ -80,4 +80,9 @@ When /I (un)?check the following ratings: (.*)/ do |uncheck, rating_list|
   end
 end
 
+Then /^the director of "([^"]*)" should be "([^"]*)"$/ do |movie_name, director_name|
+   steps %Q{
+      Then I should see "Director: #{director_name}"
+    }
+end
 
