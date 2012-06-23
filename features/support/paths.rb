@@ -25,6 +25,9 @@ module NavigationHelpers
     when /^the edit page for "(.*)"$/i
       edit_movie_path(Movie.find_by_title($1))
       
+    when /^the details page for "(.*)"$/i
+      movie_path(Movie.find_by_title($1))
+            
     else
       begin
         page_name =~ /^the (.*) page$/

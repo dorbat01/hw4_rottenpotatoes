@@ -12,6 +12,7 @@
   %li
     Director:
     = @movie.director
+    = link_to 'Find Movies With Same Director', find_similar_movies_path(@movie)
     
 %h3 Description:
 

@@ -83,6 +83,9 @@ end
 Then /^the director of "([^"]*)" should be "([^"]*)"$/ do |movie_name, director_name|
    steps %Q{
       Then I should see "Director: #{director_name}"
+      And I should see "Details about #{movie_name}"
     }
 end
+
+
 
