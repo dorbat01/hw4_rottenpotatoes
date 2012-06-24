@@ -16,7 +16,7 @@ class MoviesController < ApplicationController
     end
     @all_ratings = Movie.all_ratings
     @selected_ratings = params[:ratings] || session[:ratings] || {}
-
+  
     if params[:sort] != session[:sort]
       session[:sort] = sort
       redirect_to :sort => sort, :ratings => @selected_ratings and return
@@ -59,8 +59,15 @@ class MoviesController < ApplicationController
   end
   
   def find_similar
-    puts "I am at find Similar #{:id}"
-    @movie = Movie.find(params[:id])
+    source_movie = Movie.find(params[:id])
+    if source_movie.director.to_s.strip.length == 0
+      sort = params[:sort] || session[:sort]
+      selected_ratings = params[:ratings] || session[:ratings] || {}
+      flash[:warning] = "'#{source_movie.title}' has no director info"
+      redirect_to movies_path :sort => sort, :ratings => selected_ratings
+    else
+      @movies = Movie.find_all_by_director(source_movie.director)
+    end
   end
 
 end
