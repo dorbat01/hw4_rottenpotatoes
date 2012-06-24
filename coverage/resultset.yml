@@ -1,8 +1,103 @@
 --- 
 RSpec: 
-  :original_result: {}
-
-  :created_at: 2012-06-23 22:46:41.143116 -07:00
+  :original_result: 
+    /home/saasbook/Documents/saasworkspace/saas_chapter5/hw4_rottenpotatoes/app/controllers/application_controller.rb: 
+    - 1
+    - 1
+    - 
+    /home/saasbook/Documents/saasworkspace/saas_chapter5/hw4_rottenpotatoes/app/helpers/application_helper.rb: 
+    - 1
+    - 
+    /home/saasbook/Documents/saasworkspace/saas_chapter5/hw4_rottenpotatoes/app/helpers/movies_helper.rb: 
+    - 1
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    /home/saasbook/Documents/saasworkspace/saas_chapter5/hw4_rottenpotatoes/app/controllers/movies_controller.rb: 
+    - 1
+    - 
+    - 1
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 0
+    - 
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 1
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 
+    - 
+    - 1
+    - 5
+    - 5
+    - 2
+    - 2
+    - 2
+    - 2
+    - 
+    - 3
+    - 
+    - 
+    - 
+    - 
+    /home/saasbook/Documents/saasworkspace/saas_chapter5/hw4_rottenpotatoes/app/models/movie.rb: 
+    - 1
+    - 1
+    - 0
+    - 
+    - 
+  :created_at: 2012-06-24 01:04:16.907298 -07:00
 Cucumber Features: 
   :original_result: 
     /home/saasbook/Documents/saasworkspace/saas_chapter5/hw4_rottenpotatoes/app/controllers/application_controller.rb: 
@@ -78,6 +173,8 @@ Cucumber Features:
     - 0
     - 0
     - 0
+    - 0
+    - 0
     - 
     - 
     - 1
@@ -99,4 +196,4 @@ Cucumber Features:
     - 25
     - 
     - 
-  :created_at: 2012-06-23 22:54:14.539665 -07:00
+  :created_at: 2012-06-24 01:04:41.751616 -07:00

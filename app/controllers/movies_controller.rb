@@ -55,7 +55,9 @@ class MoviesController < ApplicationController
     @movie = Movie.find(params[:id])
     @movie.destroy
     flash[:notice] = "Movie '#{@movie.title}' deleted."
-    redirect_to movies_path
+    sort = params[:sort] || session[:sort]
+    selected_ratings = params[:ratings] || session[:ratings] || {}
+    redirect_to movies_path :sort => sort, :ratings => selected_ratings
   end
   
   def find_similar

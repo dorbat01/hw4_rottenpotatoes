@@ -42,5 +42,22 @@ require 'spec_helper'
           post :find_similar, {:id => "1"}
           response.should redirect_to('/movies?')
         end
-      end      
+      end 
+      describe 'deleting a movie' do
+        before :each do
+          @mock_source_movie = [mock(Movie)]
+          @mock_source_movie.stub(:title).and_return("test title")
+        end
+        it 'should call the model method that performs deleting movie' do
+          Movie.should_receive(:find).with("1").and_return(@mock_source_movie)
+          @mock_source_movie.should_receive(:destroy)
+          post :destroy, {:id => "1"}
+        end
+        it 'should final redirect to home' do
+          Movie.stub(:find).and_return(@mock_source_movie)
+          @mock_source_movie.stub(:destroy)
+          post :destroy, {:id => "1"}
+          response.should redirect_to('/movies?')     
+        end
+      end
     end
