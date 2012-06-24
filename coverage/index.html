@@ -21,21 +21,21 @@
       <img src="./assets/0.4.5/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2012-06-23T22:48:02-07:00">2012-06-23T22:48:02-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-06-23T22:54:14-07:00">2012-06-23T22:54:14-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     All Files
-    (<span class="red">71.7%</span>)
+    (<span class="yellow">84.91%</span>)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>5</b> files in total.
     <b>53</b> relevant lines. 
-    <span class="green"><b>38</b> lines covered</span> and
-    <span class="red"><b>15</b> lines missed </span>
+    <span class="green"><b>45</b> lines covered</span> and
+    <span class="red"><b>8</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -61,11 +61,11 @@
       
       <tr>
         <td><a href="#f953970c9d1f96b39b28af16105b90153fc53720" class="src_link" title="./app/controllers/movies_controller.rb">./app/controllers/movies_controller.rb</a></td>
-        <td class="red">68.18 %</td>
+        <td class="yellow">84.09 %</td>
         <td>73</td>
         <td>44</td>
-        <td>30</td>
-        <td>14</td>
+        <td>37</td>
+        <td>7</td>
       </tr>
       
       <tr>
@@ -103,14 +103,14 @@
           <div class="file_list_container" id="Controllers">
   <h2>
     Controllers
-    (<span class="red">69.57%</span>)
+    (<span class="yellow">84.78%</span>)
   </h2>
   <a name="Controllers"></a>
   <div>
     <b>2</b> files in total.
     <b>46</b> relevant lines. 
-    <span class="green"><b>32</b> lines covered</span> and
-    <span class="red"><b>14</b> lines missed </span>
+    <span class="green"><b>39</b> lines covered</span> and
+    <span class="red"><b>7</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -136,11 +136,11 @@
       
       <tr>
         <td><a href="#f953970c9d1f96b39b28af16105b90153fc53720" class="src_link" title="./app/controllers/movies_controller.rb">./app/controllers/movies_controller.rb</a></td>
-        <td class="red">68.18 %</td>
+        <td class="yellow">84.09 %</td>
         <td>73</td>
         <td>44</td>
-        <td>30</td>
-        <td>14</td>
+        <td>37</td>
+        <td>7</td>
       </tr>
       
     </tbody>
@@ -366,7 +366,7 @@
     <tr>
       <td colspan="3">
         <h3>./app/controllers/movies_controller.rb</h3>
-        <h4><span class="red">68.18 %</span> covered</h4>
+        <h4><span class="yellow">84.09 %</span> covered</h4>
       </td>
     </tr>
     <tr>
@@ -495,7 +495,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="hit" data-hits="25">
       <td class="line_number">
         <pre>10</pre>
       </td>
@@ -503,12 +503,12 @@
         <pre>    sort = params[:sort] || session[:sort]</pre>
       </td>
       <td class="hits">
-        1
+        25
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="hit" data-hits="25">
       <td class="line_number">
         <pre>11</pre>
       </td>
@@ -516,7 +516,7 @@
         <pre>    case sort</pre>
       </td>
       <td class="hits">
-        1
+        25
       </td>
     </tr>
   
@@ -534,7 +534,7 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="5">
       <td class="line_number">
         <pre>13</pre>
       </td>
@@ -542,7 +542,7 @@
         <pre>      ordering,@title_header = {:order =&gt; :title}, 'hilite'</pre>
       </td>
       <td class="hits">
-        0
+        5
       </td>
     </tr>
   
@@ -560,7 +560,7 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="5">
       <td class="line_number">
         <pre>15</pre>
       </td>
@@ -568,7 +568,7 @@
         <pre>      ordering,@date_header = {:order =&gt; :release_date}, 'hilite'</pre>
       </td>
       <td class="hits">
-        0
+        5
       </td>
     </tr>
   
@@ -586,7 +586,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="hit" data-hits="25">
       <td class="line_number">
         <pre>17</pre>
       </td>
@@ -594,12 +594,12 @@
         <pre>    @all_ratings = Movie.all_ratings</pre>
       </td>
       <td class="hits">
-        1
+        25
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="hit" data-hits="25">
       <td class="line_number">
         <pre>18</pre>
       </td>
@@ -607,7 +607,7 @@
         <pre>    @selected_ratings = params[:ratings] || session[:ratings] || {}</pre>
       </td>
       <td class="hits">
-        1
+        25
       </td>
     </tr>
   
@@ -625,7 +625,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="hit" data-hits="25">
       <td class="line_number">
         <pre>20</pre>
       </td>
@@ -633,12 +633,12 @@
         <pre>    if params[:sort] != session[:sort]</pre>
       </td>
       <td class="hits">
-        1
+        25
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="4">
       <td class="line_number">
         <pre>21</pre>
       </td>
@@ -646,12 +646,12 @@
         <pre>      session[:sort] = sort</pre>
       </td>
       <td class="hits">
-        0
+        4
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="4">
       <td class="line_number">
         <pre>22</pre>
       </td>
@@ -659,7 +659,7 @@
         <pre>      redirect_to :sort =&gt; sort, :ratings =&gt; @selected_ratings and return</pre>
       </td>
       <td class="hits">
-        0
+        4
       </td>
     </tr>
   
@@ -690,7 +690,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="hit" data-hits="21">
       <td class="line_number">
         <pre>25</pre>
       </td>
@@ -698,12 +698,12 @@
         <pre>    if params[:ratings] != session[:ratings] and @selected_ratings != {}</pre>
       </td>
       <td class="hits">
-        1
+        21
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="6">
       <td class="line_number">
         <pre>26</pre>
       </td>
@@ -711,12 +711,12 @@
         <pre>      session[:sort] = sort</pre>
       </td>
       <td class="hits">
-        0
+        6
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="6">
       <td class="line_number">
         <pre>27</pre>
       </td>
@@ -724,12 +724,12 @@
         <pre>      session[:ratings] = @selected_ratings</pre>
       </td>
       <td class="hits">
-        0
+        6
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="6">
       <td class="line_number">
         <pre>28</pre>
       </td>
@@ -737,7 +737,7 @@
         <pre>      redirect_to :sort =&gt; sort, :ratings =&gt; @selected_ratings and return</pre>
       </td>
       <td class="hits">
-        0
+        6
       </td>
     </tr>
   
@@ -755,7 +755,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="hit" data-hits="15">
       <td class="line_number">
         <pre>30</pre>
       </td>
@@ -763,7 +763,7 @@
         <pre>    @movies = Movie.find_all_by_rating(@selected_ratings.keys, ordering)</pre>
       </td>
       <td class="hits">
-        1
+        15
       </td>
     </tr>
   
@@ -1520,7 +1520,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="hit" data-hits="25">
       <td class="line_number">
         <pre>3</pre>
       </td>
@@ -1528,7 +1528,7 @@
         <pre>    %w(G PG PG-13 NC-17 R)</pre>
       </td>
       <td class="hits">
-        1
+        25
       </td>
     </tr>
   
